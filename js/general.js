@@ -51,7 +51,7 @@ $(document).ready(function() {
   $(".validate").validate();
   $(document).on('submit', '.contact-form', function() {
     $.ajax({
-      url : '../contact.php',
+      url : 'contact.php',
       type : 'post',
       data : $(this).serialize(),
       success : function(data) {

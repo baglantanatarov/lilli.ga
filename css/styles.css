@@ -694,7 +694,7 @@ h6.subTitle.blackFont {
 		padding: 0;
 	}
 	.about-us a:after {
-		content: 'about';
+		content: '';
 		position: absolute;
 		bottom: -40px;
 		font-size: 15px;
@@ -704,7 +704,7 @@ h6.subTitle.blackFont {
 		transform: translateX(-50%);
 	}
 	.contact-us a:after {
-		content: 'Contact';
+		content: '';
 		position: absolute;
 		bottom: -40px;
 		font-size: 15px;
