@@ -51,14 +51,14 @@ $(document).ready(function() {
   $(".validate").validate();
   $(document).on('submit', '.contact-form', function() {
     $.ajax({
-      url : 'contact.php',
+      url : 'lilli.ga/contact.php',
       type : 'post',
       data : $(this).serialize(),
       success : function(data) {
-       $('.form-respond').html("<div class='content-message success'><h2>Email Sent Successfully Your message has been submitted.</h2></div>");
+       $('.form-respond').html("<div class='content-message success'><h2>Ваше сообщение отправлено.</h2></div>");
      },
      error : function(xhr, err) {
-      $('.form-respond').html("<div class='content-message'><h2>Error sending Try again later.</h2></div>");
+      $('.form-respond').html("<div class='content-message'><h2>Ошибка отправки Попробуйте еще раз.</h2></div>");
     }
   });
     return false;
